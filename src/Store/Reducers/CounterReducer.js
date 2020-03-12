@@ -1,11 +1,11 @@
-
 import * as ActionTypes from '../Actions/ActionType'
 
 const initialState = {
     count: 0
 }
 
-const handleReducer = (state = initialState, action) => {
+
+const CounterReducer = (state = initialState, action) => {
     switch (action.type) {
         case ActionTypes.HANDLE_INCREMENT: {
             return {
@@ -25,7 +25,9 @@ const handleReducer = (state = initialState, action) => {
                 count: 0
             }
         }
-        default: return state;
+        default: return state
     }
+
 }
-export default handleReducer;
+
+export default CounterReducer;
